@@ -1,17 +1,35 @@
+
+
 /*Navigation*/
 
 /*Page Content*/
+
 /*Welcome Container*/
+
 .welcome-container {
-    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
 }
+  
+  .welcome-img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left;
+    margin-bottom: 20px;
+}
+
+/*My Projects / Bootstrap Cards*/
+
+.projects-container {
+  margin: 40px 0 10px 0;
+}
+
 
 /*Footer - Bootstrap does not have footer code - found this on Bootstrapious.com/p/bootstrap-footer-bottom*/
 
-/* ==========================================
-    FOR DEMO PURPOSE
-  ========================================== */
-  
+ 
   .text-small {
     font-size: 0.9rem;
   }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--QUESTION FOR INSTRUCTORS: HEIGHT OF THE VIEWPORT FOR WELCOME SECTION?
-     - The navbar should always be at the top of the viewport-->
+     - -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daria's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
@@ -13,8 +13,9 @@
 <body>
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQgA9uxOblYaT3PlxxhU9-elTvmnUqvYmBg&usqp=CAU"></a>Daria's Web Development Portfolio</a>
+      <!--NOTE: Fixed-top - The navbar should always be at the top of the viewport -->
+        <div class="container-fluid"> 
+          <a class="navbar-brand" href="#"><img src="#"></a>Daria's Web Development Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,21 +23,21 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <!--NOTE ADDITION OF PX-4 - USED THIS TO CREATE PADDING BETWEEN NAV LINKS - Research a better way-->
-                <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+                <a class="nav-link active px-5" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#">Projects</a>
+              <a class="nav-link px-5" href="#">Projects</a>
             </li>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Delete or Rename</a>
         </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle px-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Under Construction
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,29 +54,65 @@
         </div>
     </nav>
 <!--Sections to apply (Semantic HTML)-->
-    <!--HEADER - The title of the page - text often surrounded by H1 tags - Header element is an open and closing tag-->
-    <!--MAIN - Contains the bulk of content that the user will focus on - An open and closing tag-->
-    <!--SECTION TAG (a block level element) - Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.  Should it/can it be used in place of divs and include IDs for the purposes of this assignment?-->
+    <!--HEADER - The title of the page - H1 tags-->
+    <!--MAIN - Contains the bulk of content that the user will focus on -->
+    <!--SECTION - Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.  Should it/can it be used in place of divs and include IDs for the purposes of this assignment?-->
        
     <!--Welcome section-->
     <!--QUESTION:  The height of the welcome section should be equal to the height of the viewport.  See CSS - used class .welcome-container -->
 
-       <div id="welcome-container" class="container-lg">
-    <div id="welcome-section">
+    <header>
+      <!--container-fluid will span width of viewport and center contents -->
+      <!--Note: vh-100 fills is equal to viewport - see CSS-->
+       <div class="welcome-container container-fluid"> 
         <h1>Welcome to my Site!</h1>
+      </div>
     </div>
-</div>
+
+    <div class="welcome-img">
+      <img src="https://fortyseven47.com/storage/2021/04/What-Is-Enterprise-Web-Development-4.jpg" 
+      class="welcome-image container-fluid">
+    </div>
+  </header>
 
      <!--Projects section-->
-    <div id="projects-container" class="container-lg">
+    <div class="projects-container container-fluid">
         <div id="projects" class="project-title">
             <h3>MyProjects</h3>
             <p id="profile-link">GitHub: Insert link here:</p>
         </div> 
     </div>
 
-    <!--Bootstrap Cards - copied and pasted to make more - do three across horizontal-->
-    <div class="container"> <!--Note:  this container holds all three cards-->
+    <!--Bootstrap Cards (this is a Card Group sample - find in 5.2) - copied and pasted to make more - do three across horizontal-->
+   <!--Note:  this container holds all three cards-->
+   <div class="card-group">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+      
+
      
 <!--Footer - Bootstrap does not have a footer? Copied this code from Bootstrapious.com/p/bootstrap-footer-bottom-->
 
