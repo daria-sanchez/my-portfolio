@@ -11,9 +11,6 @@
 /* ==========================================
     FOR DEMO PURPOSE
   ========================================== */
-  body {
-    background: #2a2e32;
-  }
   
   .text-small {
     font-size: 0.9rem;
@@ -30,7 +27,7 @@
   }
   
   .form-control {
-    background: #212529;
+    background: #fff;
     border-color: #545454;
   }
   
@@ -39,6 +36,8 @@
   }
   
   footer {
-    background: #212529;
+    background: lightgrey;
   }
+  
+  /*Media Queries - note:  Media Queries always appear at the end of the CSS file*/
   
